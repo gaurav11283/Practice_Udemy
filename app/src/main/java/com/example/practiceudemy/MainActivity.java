@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
        private TextView textView;
        private Button button;
        private Button calculator;
+       private Button download;
        private int count = 0;
        private static final String TAG = "MainActivity";
        private static final String TEXT_CONTENT = "text_CONTENT";
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         button = findViewById(R.id.button);
         calculator = findViewById(R.id.calculator);
+        download = findViewById(R.id.download);
         textView.setText("");
         textView.setMovementMethod(new ScrollingMovementMethod());
 
@@ -46,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,Calculator.class));
+            }
+        });
+        download.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,DownloadData.class));
             }
         });
     }

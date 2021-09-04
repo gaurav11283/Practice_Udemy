@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/DemoProjetcts/practiceUdemy/app/src/main/res/layout-land/activity_calculator.xml" value="0.264" />
         <entry key="..\:/DemoProjetcts/practiceUdemy/app/src/main/res/layout/activity_calculator.xml" value="0.264" />
+        <entry key="..\:/DemoProjetcts/practiceUdemy/app/src/main/res/layout/activity_download_data.xml" value="0.11880108991825614" />
         <entry key="..\:/DemoProjetcts/practiceUdemy/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/DemoProjetcts/practiceUdemy/app/src/main/res/layout/list_record.xml" value="0.264" />
+        <entry key="..\:/DemoProjetcts/practiceUdemy/app/src/main/res/layout/list_view.xml" value="0.176" />
       </map>
     </option>
   </component>
