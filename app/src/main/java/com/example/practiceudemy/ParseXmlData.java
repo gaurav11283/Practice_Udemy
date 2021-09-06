@@ -25,7 +25,7 @@ public class ParseXmlData {
         FeedEntry currentRecord = null;
         boolean inEntry = false;
         String textValue = "";
-//Xml parsing code from here
+
         try {
             XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
             factory.setNamespaceAware(true);
@@ -37,8 +37,7 @@ public class ParseXmlData {
                 String tagName = xpp.getName();
                 switch (eventType) {
                     case XmlPullParser.START_TAG:
-                        Log.d(TAG, "parse: Starting tag for " + tagName);
-                        if("entry".equalsIgnoreCase(tagName)) {
+                       if("entry".equalsIgnoreCase(tagName)) {
                             inEntry = true;
                             currentRecord = new FeedEntry();
                         }
@@ -49,8 +48,7 @@ public class ParseXmlData {
                         break;
 
                     case XmlPullParser.END_TAG:
-                        Log.d(TAG, "parse: Ending tag for " + tagName);
-                        if(inEntry) {
+                       if(inEntry) {
                             if("entry".equalsIgnoreCase(tagName)) {
                                 applications.add(currentRecord);
                                 inEntry = false;
@@ -72,10 +70,7 @@ public class ParseXmlData {
                 eventType = xpp.next();
 
             }
-            for (FeedEntry app: applications) {
-                Log.d(TAG, "******************");
-                Log.d(TAG, app.toString());
-            }
+
 
         } catch(Exception e) {
             status = false;
