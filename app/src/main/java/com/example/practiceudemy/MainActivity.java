@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button download;
     private Button btnYoutube;
     private Button standAlone;
+    private Button flickr;
     private int count = 0;
     private static final String TAG = "MainActivity";
     private static final String TEXT_CONTENT = "text_CONTENT";
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         calculator = findViewById(R.id.calculator);
         download = findViewById(R.id.download);
         standAlone = findViewById(R.id.btnStandalone);
+        flickr = findViewById(R.id.btnFlickr);
         textView.setText("");
         textView.setMovementMethod(new ScrollingMovementMethod());
 
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         download.setOnClickListener(this);
         btnYoutube.setOnClickListener(this);
         standAlone.setOnClickListener(this);
+        flickr.setOnClickListener(this);
     }
 
     @Override
@@ -130,6 +133,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnStandalone:
                 startActivity(new Intent(MainActivity.this,StandAloneActivity.class));
+                break;
+            case R.id.btnFlickr:
+                startActivity(new Intent(MainActivity.this,FlickerAppActivity.class));
                 break;
 
             default:break;

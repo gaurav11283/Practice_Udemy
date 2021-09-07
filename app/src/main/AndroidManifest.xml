@@ -14,9 +14,11 @@
         android:theme="@style/Theme.PracticeUdemy"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".FlickerAppActivity"
+            android:exported="true" />
+        <activity
             android:name=".StandAloneActivity"
             android:exported="true" />
-
         <activity
             android:name=".YouTubeActivity"
             android:exported="true" />
