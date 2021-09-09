@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".FlickerAppActivity">
+    tools:context=".PhotoDetailActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -15,12 +15,10 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-           />
+            android:background="?attr/colorPrimary"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/flickr_content"/>
-
+    <include layout="@layout/content_photo_detail"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
